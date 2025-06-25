@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD MVC</title>
+</head>
+<body>
+    <?php
+        switch($route) {
+            case "show_user":
+                require "./users/show.phtml";
+                break;
+            case "create_user":
+                require "./users/create.phtml";
+                break;
+            case "update_user":
+                require "./users/update.phtml";
+                break;
+        }
+    ?>
+</body>
+</html>
