@@ -5,7 +5,7 @@ class Router {
     }
 
     public function handleRequest(array $get) : void {
-        $controller = new UserController();
+        //$controller = new UserController();
         $route = $get["route"] ?? "";      
         switch ($route) {
             case "show_user":
