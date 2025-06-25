@@ -15,16 +15,16 @@ class Router {
                 $controller->create();
                 break;
             case "check_create_user":
-                $controller->checkCreate();
+                //$controller->checkCreate();
                 break;
             case "update_user":
                 $controller->update();
                 break;
             case "check_update_user":
-                $controller->checkUpdate();
+                //$controller->checkUpdate();
                 break;
             case "delete_user":
-                $controller->delete();
+                //$controller->delete();
                 break;
             default:
                 $controller->list();
