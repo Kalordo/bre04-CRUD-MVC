@@ -18,7 +18,7 @@ class UserManager extends AbstractManager {
                 $userResult['last_name']
             );
             $user->setId($userResult['id']);
-            $users[]=$users;
+            $users[]=$user;
         }
         return $users;
     }
