@@ -20,9 +20,6 @@ class Router {
             case "update_user":
                 $controller->update();
                 break;
-            case "check_update_user":
-                $controller->checkUpdate();
-                break;
             case "delete_user":
                 $controller->delete();
                 break;

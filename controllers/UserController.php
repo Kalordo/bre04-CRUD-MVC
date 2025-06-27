@@ -22,14 +22,24 @@ class UserController {
     }
     public function checkCreate() {
         $route = "check_create_user";
+        
+        $email = $_POST["email"];
+        $first_name = $_POST["first_name"];
+        $last_name = $_POST["last_name"];
+        
+        $userCreated = new User($email,$first_name,$last_name);
+        $userManagerCreate = new UserManager();
+        $userManagerCreate->create($userCreated);
+        
+        $route = "list";
+        header('Location: index.php?route=list');
+     
+        $users = $userManagerCreate->findAll();
+        
         require "templates/layout.phtml";
     }
-    public function checkUpdate() {
-    $route = "check_update_user";
-    require "templates/layout.phtml";
-    }
     public function delete() {
-    $route = "delete";
-    require "templates/layout.phtml";
+        $route = "delete";
+        require "templates/layout.phtml";
     }
 }
