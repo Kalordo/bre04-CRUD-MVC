@@ -13,6 +13,3 @@ Commençons par remplir le template qu'elle appelle : `templates/users/create.ph
 Comme tous les formulaires en PHP, il a besoin d'une `action` et d'une `method`, la méthode, ça ne change pas : c'est `post`. Mais à votre avis, laquelle de nos routes sera son `action` ? Mettez-la en place.
 
 Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord pour obtenir la suite des consignes.
-
-
-
